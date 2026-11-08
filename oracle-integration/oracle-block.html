@@ -1,0 +1,96 @@
+<!-- ===== Оракул 64 ключей: встроенный блок страницы «Архетипы и символы» (#oracle) =====
+     Подключение: css/oracle.css, js/oracle-core.js, js/oracle-keys.js, js/oracle.js.
+     Без JavaScript виден первый экран с описанием; сама практика работает только с JS. -->
+<section class="oracle" id="oracle" aria-labelledby="oracle-title">
+  <div class="wrap">
+    <div class="or-box" data-state="intro">
+
+      <!-- 1. Знакомство -->
+      <div class="or-panel" data-panel="intro">
+        <div class="or-intro">
+          <div class="or-intro-text">
+            <h2 id="oracle-title" tabindex="-1">Оракул 64 ключей</h2>
+            <p class="or-sub">Символический путь к исследованию себя</p>
+            <p class="or-lead">Иногда новый взгляд на привычный вопрос помогает увидеть то, что прежде оставалось незамеченным. Сформулируйте вопрос, который сейчас для вас важен. Шесть бросков монет сформируют одну из 64 гексаграмм И Цзин. Каждой соответствует Генный ключ и авторская метафорическая карта.</p>
+            <button class="btn primary or-js" type="button" data-go="question">Начать практику</button>
+            <p class="or-nojs">Чтобы пройти практику, включите JavaScript в браузере.</p>
+          </div>
+          <div class="or-emblem" aria-hidden="true">
+            <svg viewBox="0 0 240 240"><g fill="none" stroke="#c9b9a3" stroke-width="1"><circle cx="120" cy="120" r="112"/><circle cx="120" cy="120" r="92"/><circle cx="120" cy="120" r="70" stroke-dasharray="2 5"/></g>
+              <g fill="#5e6449"><rect x="74" y="72" width="92" height="9" rx="2"/><rect x="74" y="88" width="92" height="9" rx="2"/><rect x="74" y="104" width="40" height="9" rx="2"/><rect x="126" y="104" width="40" height="9" rx="2"/><rect x="74" y="120" width="92" height="9" rx="2"/><rect x="74" y="136" width="40" height="9" rx="2"/><rect x="126" y="136" width="40" height="9" rx="2"/><rect x="74" y="152" width="92" height="9" rx="2"/></g></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Вопрос -->
+      <div class="or-panel" data-panel="question" hidden>
+        <h3 tabindex="-1">С каким вопросом вы хотите обратиться к себе сегодня?</h3>
+        <p class="or-caption">Сосредоточьтесь на теме, которую хотите исследовать. Вопрос можно сформулировать мысленно или записать.</p>
+        <label class="or-label" for="or-question">Ваш вопрос <span>(необязательно, никуда не отправляется)</span></label>
+        <textarea id="or-question" rows="3" maxlength="300" placeholder="Например: что мне важно понять о своих отношениях?"></textarea>
+        <div class="or-actions">
+          <button class="btn primary" type="button" data-go="throw">Продолжить</button>
+          <button class="or-link" type="button" data-go="intro">Назад</button>
+        </div>
+      </div>
+
+      <!-- 3. Броски -->
+      <div class="or-panel" data-panel="throw" hidden>
+        <div class="or-throw">
+          <div class="or-throw-left">
+            <h3 tabindex="-1" id="or-step">Бросок 1 из 6</h3>
+            <p class="or-caption" id="or-asked"></p>
+            <div class="or-coins" aria-hidden="true">
+              <div class="coin" data-i="0"><div class="coin-inner"><span class="face a"></span><span class="face b"></span></div></div>
+              <div class="coin" data-i="1"><div class="coin-inner"><span class="face a"></span><span class="face b"></span></div></div>
+              <div class="coin" data-i="2"><div class="coin-inner"><span class="face a"></span><span class="face b"></span></div></div>
+            </div>
+            <p class="or-status" id="or-status" role="status" aria-live="polite">Сосредоточьтесь на вопросе и бросьте монеты.</p>
+            <div class="or-actions">
+              <button class="btn primary" type="button" id="or-throw-btn">Бросить монеты</button>
+              <button class="btn primary" type="button" id="or-open-btn" hidden>Открыть свой ключ</button>
+              <button class="or-link" type="button" data-go="question" data-reset="throws">Назад</button>
+              <button class="or-link" type="button" data-exit>Выйти из практики</button>
+            </div>
+          </div>
+          <div class="or-hex-wrap">
+            <ol class="or-hex" id="or-hex" aria-label="Гексаграмма, линии снизу вверх"></ol>
+            <p class="or-hex-note">Линии складываются снизу вверх</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Результат -->
+      <div class="or-panel" data-panel="result" hidden>
+        <div class="or-result">
+          <div class="or-card-col">
+            <div class="or-card" id="or-card">
+              <div class="or-card-inner">
+                <div class="or-card-back" aria-hidden="true"></div>
+                <div class="or-card-front"><img id="or-card-img" alt="" width="1024" height="1536"></div>
+              </div>
+            </div>
+            <p class="or-demo" id="or-demo" hidden>Демонстрационные данные: авторская карта и тексты этого ключа ещё готовятся.</p>
+          </div>
+          <div class="or-result-text">
+            <h3 tabindex="-1" id="or-title">Ваш Генный ключ</h3>
+            <p class="or-keyname" id="or-keyname"></p>
+            <p class="or-yourq" id="or-yourq" hidden></p>
+            <p class="or-theme" id="or-theme"></p>
+            <dl class="or-freq" id="or-freq"></dl>
+            <h4>О чём приглашает задуматься этот ключ?</h4>
+            <ul class="or-questions" id="or-questions"></ul>
+            <div class="or-actions">
+              <button class="btn primary" type="button" id="or-save">Сохранить карту</button>
+              <button class="btn" type="button" data-exit>Начать новую практику</button>
+              <a class="or-link" href="#offers" id="or-deeper">Исследовать ключ глубже</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="or-disclaimer">Символическая практика для самопознания. Не предназначена для предсказаний, диагностики или медицинских решений.</p>
+    </div>
+  </div>
+</section>
+<!-- ===== /Оракул 64 ключей ===== -->
