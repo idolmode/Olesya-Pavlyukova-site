@@ -43,3 +43,13 @@
 #education,#about,#directions,#contact{scroll-margin-top:90px}
 
 /* Developer structure note: separate pages will share typography/buttons/nav. */
+
+/* Карточки направлений: картинки вертикальные, поэтому вместо низкой полосы — квадрат,
+   и у каждой своя точка кадрирования, чтобы не срезать головы и людей. */
+.cards .card .art{height:auto;min-height:0;flex:none;aspect-ratio:1/1}
+.cards .card .art img{width:100%;height:100%;object-fit:cover}
+.cards .card .art.psych img{object-position:center 72%}
+.cards .card .art.res img{object-position:center 42%}
+.cards .card .art.arch img{object-position:center 22%}
+.cards .card .art.ret img{object-position:center 75%}
+@media(max-width:600px){.cards .card .art{height:auto;min-height:0;flex:none}}
