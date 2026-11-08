@@ -1,0 +1,18 @@
+
+html{scroll-padding-top:88px}
+#page-psychology [id^="psych-"]{scroll-margin-top:88px}
+@media print {
+ @page{size:A4;margin:13mm 12mm}
+ html,body{height:auto!important;overflow:visible!important;scroll-behavior:auto!important}
+ body{background:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .header{position:relative!important;top:auto!important;backdrop-filter:none!important}
+ .mobilelinks,.navbtn,#page-psychology dialog{display:none!important}
+ #page-psychology,.ps-standalone-root,#page-psychology .ps-page{display:block!important;position:static!important;height:auto!important;max-height:none!important;overflow:visible!important}
+ #page-psychology .ps-section{break-inside:auto!important;page-break-inside:auto!important}
+ #page-psychology .ps-request-card,#page-psychology .ps-service,#page-psychology .ps-cert-card,#page-psychology .ps-step{break-inside:avoid;page-break-inside:avoid}
+ #page-psychology .ps-hero-grid{min-height:unset!important}
+ #page-psychology .ps-hero-art{max-height:450px!important}
+ #page-psychology .ps-cert-image img{max-height:230px!important}
+ .foot{break-inside:avoid}
+ a{text-decoration:none!important}
+}

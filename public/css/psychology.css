@@ -1,0 +1,121 @@
+
+/* Psychology and coaching editorial page: warm olive / cream / bronze */
+#page-psychology{background:#f7f5f0;color:#34312e;--ps-cream:#f7f5f0;--ps-olive:#555e4d;--ps-deep:#343c31;--ps-bronze:#a28765;--ps-ink:#35322e;--ps-soft:#eae7de}
+#page-psychology .ps-page{overflow:hidden}
+#page-psychology .ps-page h1,#page-psychology .ps-page h2,#page-psychology .ps-page h3,#page-psychology .ps-quote-band p,#page-psychology .ps-modal h3{font-family:'Playfair Display',Georgia,serif;font-weight:400}
+#page-psychology .ps-page h1 em,#page-psychology .ps-page h2 em{font-style:italic;color:#68705a}
+#page-psychology .ps-page h2{font-size:clamp(36px,4.05vw,63px);line-height:1.14;letter-spacing:-.029em;margin:16px 0 24px}
+#page-psychology .ps-page p{margin:0}
+#page-psychology .ps-kicker,#page-psychology .ps-eyebrow{font-size:11px;letter-spacing:.19em;font-weight:700;color:#967a5b}
+#page-psychology .ps-section{padding:114px 0}
+#page-psychology .ps-hero{background:radial-gradient(ellipse at 18% 28%,#fffefb 0,#f8f5ef 46%,#ece7dc 100%);border-bottom:1px solid #e3ddd1;position:relative}
+#page-psychology .ps-hero:before{content:'';position:absolute;inset:0;opacity:.4;background-image:linear-gradient(95deg,transparent 0,rgba(187,171,149,.09) 62%,transparent 63%);pointer-events:none}
+#page-psychology .ps-hero-grid{min-height:730px;display:grid;grid-template-columns:1fr .94fr;gap:7%;align-items:center;padding-top:52px;padding-bottom:75px;position:relative}
+#page-psychology .ps-hero-copy{position:relative;z-index:1}
+#page-psychology .ps-crumb{font-size:11px;letter-spacing:.045em;color:#86796d;margin-bottom:74px}
+#page-psychology .ps-crumb a:hover{color:#9e8063}
+#page-psychology .ps-crumb span{padding-left:8px}
+#page-psychology .ps-eyebrow{display:flex;align-items:center;gap:11px;color:#666b55}
+#page-psychology .ps-tiny-dot{width:8px;height:8px;background:#a58a67;transform:rotate(45deg);display:inline-block}
+#page-psychology .ps-hero h1{font-size:clamp(58px,6vw,96px);line-height:1.03;letter-spacing:-.055em;margin:18px 0 28px;color:#33352d}
+#page-psychology .ps-bronze-rule{height:1px;width:68px;background:#ac987e;margin:29px 0}
+#page-psychology .ps-leading{font-size:clamp(18px,2.1vw,25px);line-height:1.44;max-width:490px;color:#48463e}
+#page-psychology .ps-intro{font-size:14px;line-height:1.9;color:#766f66;max-width:500px;margin-top:22px!important}
+#page-psychology .ps-actions{display:flex;gap:28px;align-items:center;margin:30px 0 50px;flex-wrap:wrap}
+#page-psychology .ps-btn{font-family:Manrope,Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:23px;padding:14px 22px;border:1px solid transparent;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;transition:transform .2s ease,background .2s ease;min-height:48px}
+#page-psychology .ps-btn:hover{transform:translateY(-2px)}
+#page-psychology .ps-btn-dark{background:#3e4539;color:#fff;border-color:#3e4539}
+#page-psychology .ps-btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+#page-psychology .ps-text-link,#page-psychology .ps-inline-link{font-size:12px;font-weight:700;color:#78674f;border-bottom:1px solid #b3a086;padding:0 0 6px;display:inline-block;width:fit-content}
+#page-psychology .ps-hero-bottom{display:flex;gap:11px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#9c8d7a}
+#page-psychology .ps-hero-art{height:620px;position:relative;box-shadow:0 20px 56px rgba(66,61,50,.08)}
+#page-psychology .ps-hero-art svg{width:100%;height:100%;display:block;object-fit:cover}
+#page-psychology .ps-art-caption{position:absolute;right:-23px;bottom:30px;background:#f7f5f0;color:#746954;padding:15px 20px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+#page-psychology .ps-approach-section{background:#ede9df}
+#page-psychology .ps-approach-grid{display:grid;grid-template-columns:.87fr 1.13fr;gap:9%;align-items:center}
+#page-psychology .ps-portrait-wrap{margin:0;position:relative;max-width:470px}
+#page-psychology .ps-portrait-wrap:before{content:'';position:absolute;left:-24px;top:31px;width:100%;height:96%;border:1px solid #b7a587;pointer-events:none}
+#page-psychology .ps-portrait{position:relative;display:block;width:100%;height:570px;object-fit:cover;object-position:center 34%;filter:saturate(.89)}
+#page-psychology .ps-portrait-wrap figcaption{font-size:10px;letter-spacing:.14em;margin-top:21px;color:#816d57}
+#page-psychology .ps-approach-copy p{font-size:15px;line-height:1.9;color:#655f56;margin-bottom:15px}
+#page-psychology .ps-pull-quote{font-family:'Playfair Display',Georgia,serif;font-size:clamp(21px,2.2vw,30px);line-height:1.38;margin:33px 0;padding-left:23px;border-left:2px solid #ab916e;color:#5a5f4d}
+#page-psychology .ps-section-intro{display:flex;gap:60px;align-items:end;justify-content:space-between;margin-bottom:50px}
+#page-psychology .ps-section-intro>p{max-width:390px;color:#746c61;font-size:14px;line-height:1.8;padding-bottom:8px}
+#page-psychology .ps-requests-section{background:#f7f5f0}
+#page-psychology .ps-request-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+#page-psychology .ps-request-card{min-height:292px;background:#fff;border:1px solid #e5dfd5;padding:33px 29px 26px;position:relative;overflow:hidden;transition:box-shadow .2s,transform .2s}
+#page-psychology .ps-request-card:hover{box-shadow:0 15px 35px rgba(74,61,45,.07);transform:translateY(-3px)}
+#page-psychology .ps-request-card>span{font-size:11px;letter-spacing:.18em;color:#a18a67}
+#page-psychology .ps-request-card h3{font-size:25px;line-height:1.3;margin:19px 0 14px;max-width:310px}
+#page-psychology .ps-request-card p{font-size:13px;line-height:1.75;color:#746f68;position:relative;z-index:1}
+#page-psychology .ps-doodle{position:absolute;right:14px;bottom:-28px;font-family:Georgia,serif;font-size:146px;color:#e6e0d5;line-height:1;pointer-events:none}
+#page-psychology .ps-request-card:nth-child(2) .ps-doodle{color:#e0e5d8}
+#page-psychology .ps-quote-band{background:#525d4c;color:#f6f3e8;padding:90px 0;position:relative;overflow:hidden}
+#page-psychology .ps-quote-band:before{content:'';width:530px;height:530px;border:1px solid rgba(221,213,186,.18);position:absolute;right:-70px;top:-160px;border-radius:50%;box-shadow:0 0 0 76px rgba(255,255,255,.015),0 0 0 151px rgba(255,255,255,.02)}
+#page-psychology .ps-quote-band .wrap{position:relative}
+#page-psychology .ps-quote-band .ps-kicker{color:#d7b894}
+#page-psychology .ps-quote-band p{font-size:clamp(29px,3.4vw,54px);line-height:1.26;max-width:930px;margin:21px 0 0}
+#page-psychology .ps-quote-ornament{position:absolute;right:40px;bottom:-12px;font-size:75px;color:#baa581;opacity:.65}
+#page-psychology .ps-format-section{background:#f1eee7}
+#page-psychology .ps-service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+#page-psychology .ps-service{background:#fff;border:1px solid #e6e1d9;padding:32px 35px;min-height:450px;display:flex;flex-direction:column}
+#page-psychology .ps-service-olive{background:#4c5849;color:#fff;border-color:#4c5849}
+#page-psychology .ps-service-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#a78b69;font-size:10px;font-weight:700;letter-spacing:.12em}
+#page-psychology .ps-service-olive .ps-service-meta{color:#d0b99d}
+#page-psychology .ps-service h3{font-size:clamp(26px,2.8vw,35px);line-height:1.18;margin:22px 0 12px;max-width:450px}
+#page-psychology .ps-service .ps-service-sub{font-size:14px;color:#7e705f;font-weight:600;margin-bottom:17px}
+#page-psychology .ps-service-olive .ps-service-sub{color:#e5d5be}
+#page-psychology .ps-service>p:not(.ps-service-sub){font-size:13.5px;line-height:1.79;color:#726c65;flex:1}
+#page-psychology .ps-service-olive>p:not(.ps-service-sub){color:#e3e4d9}
+#page-psychology .ps-service-bottom{display:flex;align-items:end;justify-content:space-between;gap:16px;border-top:1px solid #e3ded6;padding-top:23px;margin-top:20px}
+#page-psychology .ps-service-olive .ps-service-bottom{border-color:rgba(255,255,255,.26)}
+#page-psychology .ps-price{font-size:30px;font-family:'Playfair Display',Georgia,serif;white-space:nowrap}
+#page-psychology .ps-price small{display:block;font-family:Manrope,Arial,sans-serif;font-size:11px;color:#8d8171;margin-top:1px}
+#page-psychology .ps-service-olive .ps-price small{color:#dfdcd1}
+#page-psychology .ps-price-text{font-size:22px;white-space:normal;max-width:250px;line-height:1.16}
+#page-psychology .ps-price-text small{line-height:1.5;margin-top:10px;font-size:10px}
+#page-psychology .ps-package{display:grid;grid-template-columns:96px 1fr auto;gap:24px;align-items:center;padding:27px 33px;margin-top:26px;background:#e3e1d6;border-left:3px solid #a08a69}
+#page-psychology .ps-package-symbol{font-family:'Playfair Display',Georgia,serif;font-size:46px;color:#5b6552}
+#page-psychology .ps-package-symbol span{font-size:22px}
+#page-psychology .ps-package strong{font-size:15px;color:#45463d}
+#page-psychology .ps-package p{font-size:12.5px;color:#726c62;line-height:1.65;margin-top:6px}
+#page-psychology .ps-plain-link{font-weight:700;font-size:12px;border:none;border-bottom:1px solid #9b8469;color:#6b5d4c;padding:5px 0;background:transparent;cursor:pointer;white-space:nowrap}
+#page-psychology .ps-process-section{background:#fbfaf7}
+#page-psychology .ps-process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:48px}
+#page-psychology .ps-step{padding-top:25px;border-top:1px solid #b8a88c}
+#page-psychology .ps-step-no{font-family:Georgia,serif;font-size:26px;color:#a48764}
+#page-psychology .ps-step h3{font-size:27px;line-height:1.25;margin:22px 0 13px}
+#page-psychology .ps-step p{font-size:13.5px;line-height:1.8;color:#786f65}
+#page-psychology .ps-work-note{border:1px solid #e0d9cf;padding:22px 28px;margin-top:50px;font-size:13px;color:#736b5f;background:#f6f3ed}
+#page-psychology .ps-docs-section{background:#eae7de}
+#page-psychology .ps-cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:25px 0 32px}
+#page-psychology .ps-cert-card{display:grid;grid-template-columns:48% 52%;gap:0;border:1px solid #d9d3c7;background:#f9f7f2;text-align:left;cursor:pointer;min-height:260px;padding:0;color:#393731;overflow:hidden;transition:transform .2s,box-shadow .2s}
+#page-psychology .ps-cert-card:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(52,49,46,.08)}
+#page-psychology .ps-cert-image{height:260px;overflow:hidden;display:flex;align-items:center;background:#eee9df;justify-content:center;padding:15px}
+#page-psychology .ps-cert-image img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+#page-psychology .ps-cert-text{display:flex;flex-direction:column;justify-content:center;padding:25px;gap:11px}
+#page-psychology .ps-cert-text strong{font-family:'Playfair Display',Georgia,serif;font-size:24px;font-weight:400;line-height:1.25}
+#page-psychology .ps-cert-text small{font-size:11px;line-height:1.6;color:#81796e}
+#page-psychology .ps-cert-text>span{font-size:11px;font-weight:700;color:#8b7256;text-decoration:underline;text-underline-offset:5px;margin-top:16px}
+#page-psychology .ps-contact-section{padding:95px 0;background:#f7f5f0;border-top:1px solid #e5ded2}
+#page-psychology .ps-contact-grid{display:grid;grid-template-columns:1fr 370px;gap:12%;align-items:center}
+#page-psychology .ps-contact-grid>div>p{font-size:14px;max-width:535px;color:#746d65;line-height:1.85}
+#page-psychology .ps-contact-card{background:#e9e5da;padding:34px;border:1px solid #d6cdbe;display:flex;flex-direction:column;gap:14px}
+#page-psychology .ps-contact-mark{font-size:45px;color:#998368}
+#page-psychology .ps-contact-card>span{color:#6e695c;font-size:12px}
+#page-psychology .ps-contact-card strong{font-family:'Playfair Display',Georgia,serif;font-size:40px;font-weight:400}
+#page-psychology .ps-contact-card p{font-size:11px;color:#7b746b;line-height:1.6}
+#page-psychology .ps-disclaimer{font-size:11px;color:#989087;padding-top:22px;padding-bottom:38px;border-top:1px solid #e4dfd6}
+#page-psychology .ps-modal{max-width:520px;width:calc(100% - 32px);background:#f9f7f1;color:#393731;border:1px solid #b5a58a;padding:35px 38px;box-shadow:0 30px 75px rgba(0,0,0,.27)}
+#page-psychology .ps-modal::backdrop{background:rgba(28,33,28,.65)}
+#page-psychology .ps-modal h3{font-size:39px;margin:13px 0 18px}
+#page-psychology .ps-modal p{color:#655f56;font-size:14px;line-height:1.8;margin-bottom:23px}
+#page-psychology .ps-modal .ps-modal-picked{background:#ebe7dd;padding:15px;margin-bottom:19px;font-size:12px}
+#page-psychology .ps-modal-close{position:absolute;right:16px;top:10px;border:none;background:transparent;font-size:28px;cursor:pointer;color:#655d52}
+#page-psychology .ps-copy-service{display:block;border:0;border-bottom:1px solid #9e8063;background:transparent;color:#7c684d;cursor:pointer;margin:18px 0 0;padding:4px 0;font-weight:600;font-size:12px}
+#page-psychology .ps-zoom-modal{max-width:min(92vw,1200px);width:max-content;max-height:94vh;text-align:center;overflow:auto;padding:36px}
+#page-psychology .ps-zoom-modal img{max-width:100%;max-height:76vh;display:block;object-fit:contain;margin:auto}
+#page-psychology .ps-zoom-modal p{margin:13px 0 0}
+@media(max-width:1030px){#page-psychology .ps-hero-grid{gap:4%}#page-psychology .ps-hero-art{height:540px}#page-psychology .ps-service-bottom{align-items:stretch;flex-direction:column}#page-psychology .ps-service-bottom .ps-btn{align-self:flex-start}#page-psychology .ps-cert-card{grid-template-columns:43% 57%}}
+@media(max-width:850px){#page-psychology .ps-hero-grid{grid-template-columns:1fr;gap:25px;min-height:0;padding-bottom:55px}#page-psychology .ps-hero-art{height:470px;width:100%;max-width:570px;margin:auto}#page-psychology .ps-crumb{margin-bottom:35px}#page-psychology .ps-hero h1{font-size:clamp(58px,9vw,82px)}#page-psychology .ps-approach-grid{grid-template-columns:1fr;gap:50px}#page-psychology .ps-portrait-wrap{max-width:450px;margin:auto}#page-psychology .ps-request-grid{grid-template-columns:repeat(2,1fr)}#page-psychology .ps-process-grid{gap:17px}#page-psychology .ps-cert-grid{grid-template-columns:1fr}#page-psychology .ps-contact-grid{grid-template-columns:1fr;gap:38px}#page-psychology .ps-contact-card{max-width:440px}}
+@media(max-width:620px){#page-psychology .ps-section{padding:72px 0}#page-psychology .ps-hero-grid{padding-top:25px}#page-psychology .ps-hero h1{font-size:clamp(49px,12.2vw,70px)}#page-psychology .ps-hero-art{height:400px}#page-psychology .ps-art-caption{right:0;bottom:18px;padding:11px 14px;font-size:9px}#page-psychology .ps-hero-bottom{font-size:8px;gap:8px}#page-psychology .ps-portrait{height:455px}#page-psychology .ps-portrait-wrap:before{left:-11px;top:17px}#page-psychology .ps-section-intro{display:block;margin-bottom:32px}#page-psychology .ps-section-intro>p{margin-top:15px}#page-psychology .ps-request-grid{grid-template-columns:1fr;gap:12px}#page-psychology .ps-request-card{min-height:235px;padding:27px 27px 26px}#page-psychology .ps-service-grid{grid-template-columns:1fr;gap:15px}#page-psychology .ps-service{padding:26px;min-height:0}#page-psychology .ps-service-meta{font-size:9px}#page-psychology .ps-package{grid-template-columns:1fr;gap:7px;padding:25px}#page-psychology .ps-package-symbol{font-size:36px}#page-psychology .ps-package .ps-plain-link{width:fit-content;margin-top:10px}#page-psychology .ps-process-grid{grid-template-columns:1fr;gap:30px}#page-psychology .ps-step h3{margin:12px 0}#page-psychology .ps-cert-grid{gap:15px}#page-psychology .ps-cert-card{grid-template-columns:1fr}#page-psychology .ps-cert-image{height:250px}#page-psychology .ps-cert-text{padding:22px}#page-psychology .ps-contact-section{padding:75px 0}#page-psychology .ps-modal{padding:26px 24px}#page-psychology .ps-hero-copy .ps-actions{gap:18px}}
