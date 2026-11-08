@@ -15,9 +15,9 @@ app.use(
   express.static(PUBLIC, {
     extensions: ["html"], // /psychology → psychology.html
     setHeaders(res, file) {
-      // Картинки, стили и скрипты кэшируются на сутки, страницы — всегда свежие после деплоя
-      if (/\.(jpe?g|png|webp|css|js)$/i.test(file)) res.set("Cache-Control", "public, max-age=86400");
-      else res.set("Cache-Control", "no-cache");
+      // Браузер хранит файлы, но перед показом сверяется с сервером (ETag): если картинку или стиль
+      // заменили с тем же именем, после деплоя сразу видна новая версия.
+      res.set("Cache-Control", "no-cache");
     }
   })
 );

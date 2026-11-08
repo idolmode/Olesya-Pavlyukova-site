@@ -2,7 +2,7 @@
 const diplomaImages = [
   "assets/diploma_altairegional_university_full.jpg",
   "assets/diploma_business_retraining_full.jpg",
-  "assets/diploma_psy20_full.jpg"
+  "assets/diploma_psy20_full.jpg?v=2"
 ];
 const mobileToggle = document.querySelector('.navbtn');
 const mobileMenu = document.querySelector('.mobilelinks');
