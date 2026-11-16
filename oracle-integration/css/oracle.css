@@ -1,0 +1,107 @@
+/* Оракул 64 ключей — встроенный блок страницы «Архетипы и символы».
+   Опирается на токены сайта (home.css): --ivory, --ink, --muted, --bronze, --line,
+   шрифты Playfair Display (заголовки) и Manrope (текст), кнопки .btn / .btn.primary. */
+.oracle{--olive:#5e6449;--sand:#efe8de;--bronze-d:#7d6248;padding:96px 0;background:
+  radial-gradient(60% 70% at 70% 30%,rgba(255,255,255,.75),rgba(255,255,255,0) 70%),var(--sand);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.or-box{position:relative;max-width:1080px;margin:0 auto}
+/* стили кнопок сайта задают display — без !important скрытые кнопки остались бы видны */
+.oracle [hidden]{display:none!important}
+.or-panel h2{font-size:clamp(36px,4vw,56px)}
+.or-panel h3{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(26px,2.8vw,38px);line-height:1.2;color:var(--ink)}
+.or-panel h4{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:21px;margin:30px 0 10px}
+.or-panel h2:focus,.or-panel h3:focus{outline:none}
+.or-sub{font-size:clamp(18px,1.8vw,22px);margin-top:14px}
+.or-lead,.or-caption{color:var(--muted);font-size:15px;max-width:560px;margin-top:16px}
+.or-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:30px}
+.or-actions .btn{cursor:pointer}
+.btn[disabled]{opacity:.45;cursor:default;transform:none}
+.or-link{background:none;border:0;padding:4px 0;font:600 12px/1.4 Manrope,Arial,sans-serif;color:#64513d;border-bottom:1px solid var(--bronze);cursor:pointer;letter-spacing:.02em}
+.or-link:hover{color:var(--bronze)}
+.oracle :focus-visible{outline:2px solid var(--bronze);outline-offset:3px}
+.or-disclaimer{margin-top:44px;font-size:12px;color:#8a7f73;text-align:center}
+
+/* знакомство */
+.or-intro{display:grid;grid-template-columns:1.15fr .85fr;gap:6%;align-items:center}
+.or-intro .btn{margin-top:30px}
+.or-emblem svg{display:block;width:100%;max-width:340px;margin:auto}
+.or-nojs{display:none}
+.no-js .or-js{display:none}.no-js .or-nojs{display:block;margin-top:26px;color:var(--muted);font-size:14px}
+
+/* вопрос */
+.or-label{display:block;margin-top:26px;font-size:13px;font-weight:600}
+.or-label span{font-weight:400;color:var(--muted)}
+#or-question{display:block;width:100%;max-width:640px;margin-top:8px;padding:14px 16px;border:1px solid #d6cbbb;background:#fbf9f5;
+  font:400 16px/1.5 Manrope,Arial,sans-serif;color:var(--ink);resize:vertical}
+#or-question:focus{outline:none;border-color:var(--bronze)}
+
+/* броски */
+.or-throw{display:grid;grid-template-columns:1.2fr .8fr;gap:7%;align-items:center}
+.or-coins{display:flex;gap:clamp(14px,3vw,34px);margin:34px 0 8px;perspective:900px}
+.coin{width:clamp(78px,10vw,112px);aspect-ratio:1;position:relative}
+.coin-inner{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .2s}
+.face{position:absolute;inset:0;border-radius:50%;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  background-size:cover;box-shadow:0 10px 22px -10px rgba(77,58,38,.55)}
+.face.b{transform:rotateY(180deg)}
+.coin.show-b .coin-inner{transform:rotateY(180deg)}
+.coin.toss .coin-inner{animation:toss var(--dur,1s) cubic-bezier(.25,.7,.3,1) forwards}
+@keyframes toss{
+  0%{transform:translateY(0) rotateY(var(--from,0deg))}
+  45%{transform:translateY(-26px) rotateY(calc(var(--to) * .55))}
+  100%{transform:translateY(0) rotateY(var(--to))}}
+.or-status{min-height:46px;margin-top:16px;font-size:14px;color:var(--muted)}
+.or-hex-wrap{text-align:center}
+.or-hex{list-style:none;margin:0 auto;padding:22px 26px;display:flex;flex-direction:column-reverse;gap:14px;width:min(100%,260px);
+  border:1px solid #d9cdbb;background:rgba(255,255,255,.5)}
+.or-hex li{height:16px;display:flex;justify-content:space-between;position:relative}
+.or-hex li::before,.or-hex li::after{content:"";height:100%;border-radius:2px;background:var(--olive)}
+.or-hex li.yang::before{width:100%}.or-hex li.yang::after{display:none}
+.or-hex li.yin::before,.or-hex li.yin::after{width:43%}
+.or-hex li.empty::before{width:100%;background:none;border:1px dashed #cfc2ae}.or-hex li.empty::after{display:none}
+.or-hex li.new{animation:grow .55s ease-out}
+@keyframes grow{from{opacity:0;transform:scaleX(.2)}to{opacity:1;transform:none}}
+.or-hex.done{box-shadow:0 0 0 6px rgba(158,128,99,.12),0 0 38px rgba(158,128,99,.25);transition:box-shadow .8s}
+.or-hex-note{margin-top:12px;font-size:12px;color:#8a7f73}
+
+/* результат */
+.or-result{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:7%;align-items:start}
+.or-card{perspective:1400px;max-width:420px}
+.or-card-inner{position:relative;aspect-ratio:2/3;transform-style:preserve-3d;transition:transform 1s cubic-bezier(.3,.7,.2,1)}
+.or-card.closed .or-card-inner{transform:rotateY(180deg)}
+.or-card-back,.or-card-front{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  box-shadow:0 26px 50px -26px rgba(52,49,46,.55);overflow:hidden}
+.or-card-back{transform:rotateY(180deg);background:#3f3a33;
+  background-image:radial-gradient(circle at 50% 50%,rgba(201,176,135,.35) 0 18%,transparent 19%),
+    repeating-radial-gradient(circle at 50% 50%,rgba(201,176,135,.28) 0 1px,transparent 1px 14px);
+  border:10px solid #f3eee6;outline:1px solid #c9b087;outline-offset:-18px}
+.or-card-front{background:#fbf9f5}
+.or-card-front img{display:block;width:100%;height:100%;object-fit:contain}
+.or-demo{margin-top:14px;font-size:12px;color:#8d5f45;max-width:420px}
+.or-keyname{margin-top:8px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,2.2vw,30px);color:var(--bronze-d)}
+.or-yourq{margin-top:16px;padding-left:14px;border-left:2px solid var(--bronze);font-style:italic;color:var(--muted);font-size:14px}
+.or-theme{margin-top:18px;font-size:15px;color:var(--muted);max-width:560px}
+.or-freq{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:24px 0 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.or-freq dt{font-weight:700;font-size:13px;color:var(--ink)}
+.or-freq dd{margin:0;font-size:14px;color:var(--muted)}
+.or-freq dd b{color:var(--ink);font-weight:600}
+.or-questions{margin:0;padding-left:20px;color:var(--ink);font-size:15px}
+.or-questions li{margin:6px 0}
+
+@media(max-width:880px){
+  .oracle{padding:70px 0}
+  .or-intro,.or-throw,.or-result{grid-template-columns:1fr;gap:34px}
+  .or-emblem svg{max-width:220px}
+  .or-hex-wrap{order:-1}
+  .or-card{margin:auto;max-width:360px}
+}
+@media(max-width:420px){
+  .or-actions .btn{width:100%}
+  .or-hex{padding:16px 18px;gap:11px}
+  .or-hex li{height:13px}
+}
+@media(prefers-reduced-motion:reduce){
+  .coin.toss .coin-inner{animation:none}
+  .or-hex li.new{animation:none}
+  .or-card-inner{transition:none}
+}
+@media print{.oracle{display:none}}

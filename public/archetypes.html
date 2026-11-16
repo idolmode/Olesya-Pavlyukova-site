@@ -1,99 +1,139 @@
 <!DOCTYPE html>
 
-<html class="no-js" lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Архетипы и символы — Олеся Павлюкова</title><link href="css/home.css" rel="stylesheet"/><link href="css/oracle.css" rel="stylesheet"/></head><body><header class="header"><nav class="wrap nav"><a class="wordmark" href="index.html#top">OLESYA PAVLYUKOVA</a><div class="links"><a href="index.html#top">Главная</a><a href="index.html#about">Обо мне</a><div class="nav-group"><a aria-haspopup="true" href="index.html#directions">Направления ▾</a><div class="submenu"><a href="psychology.html">Психология и коучинг</a><a href="resonance.html">Метод резонансной релаксации</a><a href="archetypes.html">Архетипы и символы</a><a href="retreats.html">Авторские ретриты</a></div></div><a href="#oracle">Оракул</a><a href="index.html#education">Образование</a><a href="index.html#contact">Контакты</a></div><button aria-controls="mobile-site-links" aria-expanded="false" aria-label="Открыть меню" class="navbtn" type="button">☰</button></nav><div class="wrap mobilelinks" id="mobile-site-links"><a href="index.html#top">Главная</a><a href="index.html#about">Обо мне</a><a href="psychology.html">Психология и коучинг</a><a href="resonance.html">Метод резонансной релаксации</a><a href="archetypes.html">Архетипы и символы</a><a href="retreats.html">Авторские ретриты</a><a href="#oracle">Оракул 64 ключей</a><a href="index.html#education">Образование</a><a href="index.html#contact">Контакты</a></div></header><main><section class="wrap inner-hero" id="top"><div><div class="eyebrow">03 / Символы</div><h1>Архетипы и символы</h1><p>Архетипические разборы, юнгианская символика и работа с метафорическими образами.</p><p>Полная страница направления готовится. Уже сейчас можно пройти символическую практику «Оракул 64 ключей».</p><div class="buttons"><a class="btn primary" href="#oracle">Попробовать оракул</a><a class="btn" href="index.html#directions">Все направления</a></div></div><img alt="Архетипический образ с ДНК и золотыми нитями" src="assets/direction_archetypes.jpg"/></section><!-- ===== Оракул 64 ключей: встроенный блок страницы «Архетипы и символы» (#oracle) =====
-     Подключение: css/oracle.css, js/oracle-core.js, js/oracle-keys.js, js/oracle.js.
-     Без JavaScript виден первый экран с описанием; сама практика работает только с JS. -->
-<section class="oracle" id="oracle" aria-labelledby="oracle-title">
-  <div class="wrap">
-    <div class="or-box" data-state="intro">
-
-      <!-- 1. Знакомство -->
-      <div class="or-panel" data-panel="intro">
-        <div class="or-intro">
-          <div class="or-intro-text">
-            <h2 id="oracle-title" tabindex="-1">Оракул 64 ключей</h2>
-            <p class="or-sub">Символический путь к исследованию себя</p>
-            <p class="or-lead">Иногда новый взгляд на привычный вопрос помогает увидеть то, что прежде оставалось незамеченным. Сформулируйте вопрос, который сейчас для вас важен. Шесть бросков монет сформируют одну из 64 гексаграмм И Цзин. Каждой соответствует Генный ключ и авторская метафорическая карта.</p>
-            <button class="btn primary or-js" type="button" data-go="question">Начать практику</button>
-            <p class="or-nojs">Чтобы пройти практику, включите JavaScript в браузере.</p>
-          </div>
-          <div class="or-emblem" aria-hidden="true">
-            <svg viewBox="0 0 240 240"><g fill="none" stroke="#c9b9a3" stroke-width="1"><circle cx="120" cy="120" r="112"/><circle cx="120" cy="120" r="92"/><circle cx="120" cy="120" r="70" stroke-dasharray="2 5"/></g>
-              <g fill="#5e6449"><rect x="74" y="72" width="92" height="9" rx="2"/><rect x="74" y="88" width="92" height="9" rx="2"/><rect x="74" y="104" width="40" height="9" rx="2"/><rect x="126" y="104" width="40" height="9" rx="2"/><rect x="74" y="120" width="92" height="9" rx="2"/><rect x="74" y="136" width="40" height="9" rx="2"/><rect x="126" y="136" width="40" height="9" rx="2"/><rect x="74" y="152" width="92" height="9" rx="2"/></g></svg>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2. Вопрос -->
-      <div class="or-panel" data-panel="question" hidden>
-        <h3 tabindex="-1">С каким вопросом вы хотите обратиться к себе сегодня?</h3>
-        <p class="or-caption">Сосредоточьтесь на теме, которую хотите исследовать. Вопрос можно сформулировать мысленно или записать.</p>
-        <label class="or-label" for="or-question">Ваш вопрос <span>(необязательно, никуда не отправляется)</span></label>
-        <textarea id="or-question" rows="3" maxlength="300" placeholder="Например: что мне важно понять о своих отношениях?"></textarea>
-        <div class="or-actions">
-          <button class="btn primary" type="button" data-go="throw">Продолжить</button>
-          <button class="or-link" type="button" data-go="intro">Назад</button>
-        </div>
-      </div>
-
-      <!-- 3. Броски -->
-      <div class="or-panel" data-panel="throw" hidden>
-        <div class="or-throw">
-          <div class="or-throw-left">
-            <h3 tabindex="-1" id="or-step">Бросок 1 из 6</h3>
-            <p class="or-caption" id="or-asked"></p>
-            <div class="or-coins" aria-hidden="true">
-              <div class="coin" data-i="0"><div class="coin-inner"><span class="face a"></span><span class="face b"></span></div></div>
-              <div class="coin" data-i="1"><div class="coin-inner"><span class="face a"></span><span class="face b"></span></div></div>
-              <div class="coin" data-i="2"><div class="coin-inner"><span class="face a"></span><span class="face b"></span></div></div>
-            </div>
-            <p class="or-status" id="or-status" role="status" aria-live="polite">Сосредоточьтесь на вопросе и бросьте монеты.</p>
-            <div class="or-actions">
-              <button class="btn primary" type="button" id="or-throw-btn">Бросить монеты</button>
-              <button class="btn primary" type="button" id="or-open-btn" hidden>Открыть свой ключ</button>
-              <button class="or-link" type="button" data-go="question" data-reset="throws">Назад</button>
-              <button class="or-link" type="button" data-exit>Выйти из практики</button>
-            </div>
-          </div>
-          <div class="or-hex-wrap">
-            <ol class="or-hex" id="or-hex" aria-label="Гексаграмма, линии снизу вверх"></ol>
-            <p class="or-hex-note">Линии складываются снизу вверх</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4. Результат -->
-      <div class="or-panel" data-panel="result" hidden>
-        <div class="or-result">
-          <div class="or-card-col">
-            <div class="or-card" id="or-card">
-              <div class="or-card-inner">
-                <div class="or-card-back" aria-hidden="true"></div>
-                <div class="or-card-front"><img id="or-card-img" alt="" width="1024" height="1536"></div>
-              </div>
-            </div>
-            <p class="or-demo" id="or-demo" hidden>Демонстрационные данные: авторская карта и тексты этого ключа ещё готовятся.</p>
-          </div>
-          <div class="or-result-text">
-            <h3 tabindex="-1" id="or-title">Ваш Генный ключ</h3>
-            <p class="or-keyname" id="or-keyname"></p>
-            <p class="or-yourq" id="or-yourq" hidden></p>
-            <p class="or-theme" id="or-theme"></p>
-            <dl class="or-freq" id="or-freq"></dl>
-            <h4>О чём приглашает задуматься этот ключ?</h4>
-            <ul class="or-questions" id="or-questions"></ul>
-            <div class="or-actions">
-              <button class="btn primary" type="button" id="or-save">Сохранить карту</button>
-              <button class="btn" type="button" data-exit>Начать новую практику</button>
-              <a class="or-link" href="#offers" id="or-deeper">Исследовать ключ глубже</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <p class="or-disclaimer">Символическая практика для самопознания. Не предназначена для предсказаний, диагностики или медицинских решений.</p>
-    </div>
-  </div>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#f7f5f0" name="theme-color"/>
+<meta content="Архетипы и символы. Юнгианские архетипы, Генные ключи, сновидения, символы и индивидуальное наставничество с Олесей Павлюковой." name="description"/>
+<title>Архетипы и символы · Атлас внутреннего мира — Олеся Павлюкова</title>
+<link rel="stylesheet" href="css/archetypes.css">
+<meta content="Авторские практики Олеси Павлюковой: архетипы, Генные ключи, Хологенетический профиль, оракул 64 ключей и индивидуальная психологическая работа." name="description"/></head>
+<body>
+<header class="header"><nav class="wrap nav"><a class="wordmark" href="index.html" title="На главную страницу сайта">OLESYA PAVLYUKOVA</a><div aria-label="Навигация по разделу" class="links"><a href="#start">Начало</a><a href="#approach">Подход</a><a href="#tools">Инструменты</a><a href="#offers">Форматы работы</a><a href="#deck">Колода</a><a class="atlas-nav-accent" href="#atlas">Атлас</a><a href="#contact">Контакты</a></div><button aria-controls="mobile-nav" aria-expanded="false" aria-label="Открыть меню" class="navbtn" type="button">☰</button></nav><div class="wrap mobilelinks" id="mobile-nav"><a href="#start">Начало</a><a href="#approach">Подход</a><a href="#tools">Инструменты</a><a href="#offers">Форматы работы</a><a href="#deck">Колода</a><a class="atlas-nav-accent" href="#atlas">Атлас</a><a href="#contact">Контакты</a></div></header>
+<main>
+<section class="wrap hero" id="start">
+<div><nav class="crumb crumb-links" aria-label="Путь по сайту"><a href="index.html" title="Перейти на главную страницу сайта">Главная</a><span aria-hidden="true">/</span><a href="index.html#directions" title="Посмотреть все направления работы">Направления</a><span aria-hidden="true">/</span><a class="crumb-current" href="#start" aria-current="page" title="К началу раздела Архетипы и символы">Архетипы и символы</a></nav><div class="eyebrow">Исследование личности и бессознательного</div><h1>Архетипы<br/>и символы</h1><p class="subheading">Язык бессознательного. Путь к пониманию себя.</p><p class="description">Внутри каждого из нас существует гораздо больше, чем мы привыкли о себе знать. Архетипы, Генные ключи, сновидения и метафорические образы могут стать разными способами исследовать собственный опыт и находить новые смыслы.</p><div class="buttons"><a class="btn primary" href="#offers">Форматы работы</a><a class="btn" href="#approach">Мой подход</a></div><a class="atlas-hero-link" href="#atlas">Попробовать интерактивные практики  ↗</a></div>
+<div class="hero-pic"><img alt="Олеся Павлюкова в оливковом костюме" decoding="sync" height="1100" loading="eager" src="assets/olesya-hero-olive.jpg" width="880"/><div class="hero-tag">За пределами привычного</div></div>
 </section>
-<!-- ===== /Оракул 64 ключей ===== -->
-</main><footer class="foot" id="contact"><div class="wrap"><div class="footer"><div><div class="eyebrow">Будем на связи</div><h2>Контакты</h2><p class="draft">Общие вопросы и профессиональные площадки</p></div><div class="footer-links"><span>Telegram</span><span>Instagram</span><span>Threads</span></div></div><div class="bottom">© Olesya Pavlyukova </div></div></footer><script src="js/home.js"></script><script src="js/oracle-core.js"></script><script src="js/oracle-keys.js"></script><script src="js/oracle.js"></script></body></html>
+<section class="intro section" id="approach"><div class="wrap intro-grid"><div class="intro-pic"><img alt="Олеся Павлюкова в светлом жакете, портрет в тёплом естественном свете" decoding="sync" loading="eager" src="assets/olesya-light-jacket.jpg"/></div><div class="intro-copy"><div class="eyebrow">01 / Подход</div><h2>За пределами привычного образа себя</h2><p>Мы привыкли определять себя через профессию, отношения, достижения и жизненную историю. Но личность многограннее того образа, который мы предъявляем миру.</p><p>В юнгианской традиции символы и архетипические мотивы помогают исследовать внутренние противоречия, повторяющиеся темы, забытые стремления и качества, которые пока трудно проявлять.</p><p>В работе я объединяю психологическое исследование, Генные ключи, сновидения и метафорические инструменты. Не для того, чтобы присвоить человеку очередной тип, а чтобы увидеть индивидуальность его истории.</p><div class="quote">«Моя задача — не определить, какой вы архетип, а помочь вам увидеть многогранность собственной личности».</div></div></div></section>
+<section class="section wrap" id="tools"><div class="centerhead"><div class="eyebrow">02 / Инструменты</div><h2>Четыре языка одного исследования</h2><p>Разные подходы могут соединяться в одной работе — в зависимости от вашего запроса, опыта и того, что становится значимым в процессе.</p></div><div class="tools">
+<a href="#method-jung" data-method="jung" aria-controls="method-jung" aria-expanded="false" aria-label="Узнать подробнее: Архетипы Юнга" class="tool visual-tool visual-tool-archetype"><div class="tool-picture"><img alt="Архетипический образ: античная скульптура и светящиеся орбиты" class="tool-art-photo" loading="eager" src="assets/archetypes-sculpture.jpg"/><div class="tool-picture-kicker">ВНУТРЕННИЕ ОБРАЗЫ</div></div><div class="tool-content"><span class="tool-num">01</span><div><h3>Архетипы Юнга</h3><p>Внутренние роли, теневая сторона личности и повторяющиеся сценарии. Исследуем то, что остаётся за пределами привычного образа себя.</p></div></div></a>
+<a href="#method-genes" data-method="genes" aria-controls="method-genes" aria-expanded="false" aria-label="Узнать подробнее: Генные ключи Ричарда Радда" class="tool visual-tool visual-tool-dna"><div class="tool-picture"><img alt="Генные ключи: светящаяся спираль ДНК в глубоком зелёном пространстве" class="tool-art-photo" loading="eager" src="assets/gene-keys-spiral.jpg"/><div class="tool-picture-kicker">64 АРХЕТИПИЧЕСКИХ ТЕМЫ</div></div><div class="tool-content"><span class="tool-num">02</span><div><h3>Генные ключи Ричарда Радда</h3><p>64 символические темы, Тень, Дар и Сиддхи. Ищем личный смысл архетипических сюжетов в вашем опыте.</p></div></div></a>
+<a href="#method-dreams" data-method="dreams" aria-controls="method-dreams" aria-expanded="false" aria-label="Узнать подробнее: Сновидения и символы" class="tool visual-tool visual-tool-dream"><div class="tool-picture"><img alt="Сновидения: лунная арка, ведущая в сюрреалистический мир" class="tool-art-photo" loading="eager" src="assets/dreams-lunar-arch.jpg"/><div class="tool-picture-kicker">ЯЗЫК БЕССОЗНАТЕЛЬНОГО</div></div><div class="tool-content"><span class="tool-num">03</span><div><h3>Сновидения и символы</h3><p>Образы сновидений, повторяющиеся мотивы и символы как язык внутреннего опыта — без готовых универсальных толкований.</p></div></div></a>
+<a href="#method-myth" data-method="myth" aria-controls="method-myth" aria-expanded="false" aria-label="Узнать подробнее: Мифологические образы и карты" class="tool visual-tool visual-tool-cards"><div class="tool-picture"><img alt="Мифологические образы: карты с символом золотого солнца" class="tool-art-photo" loading="eager" src="assets/symbolic-cards-sun.jpg"/><div class="tool-picture-kicker">ВИЗУАЛЬНЫЕ АССОЦИАЦИИ</div></div><div class="tool-content"><span class="tool-num">04</span><div><h3>Мифологические образы и карты</h3><p>Мифологические сюжеты и метафорические карты как зеркало чувств, решений и внутренних вопросов.</p></div></div></a>
+</div>
+<div class="method-detail-group" id="method-details" aria-label="Описание выбранного направления">
+  <details id="method-jung" class="method-detail">
+    <summary><span class="method-detail-kicker">01 / Архетипическое исследование</span><span class="method-detail-heading">Архетипы Юнга</span><span class="method-detail-hint">Свернуть <span aria-hidden="true">−</span></span></summary>
+    <div class="method-detail-body"><p>Архетипы помогают замечать внутренние роли и повторяющиеся сюжеты: например, где мы привычно стараемся соответствовать ожиданиям, а где скрываем собственные чувства и желания. В индивидуальной работе исследуем не «тип», а смысл этих образов именно для вашей истории.</p><div class="method-detail-tags"><span>Внутренние роли</span><span>Теневая сторона</span><span>Повторяющиеся сценарии</span></div></div>
+  </details>
+  <details id="method-genes" class="method-detail">
+    <summary><span class="method-detail-kicker">02 / Символический язык</span><span class="method-detail-heading">Генные ключи Ричарда Радда</span><span class="method-detail-hint">Свернуть <span aria-hidden="true">−</span></span></summary>
+    <div class="method-detail-body"><p>Каждый из 64 ключей предлагает тему для созерцания через Тень, Дар и Сиддхи. Мы связываем символическое описание с вашими наблюдениями, решениями и жизненным опытом, не превращая ключ в жёсткое определение личности.</p><div class="method-detail-tags"><span>Тень</span><span>Дар</span><span>Сиддхи</span></div><a class="method-inline-link" href="#genekeys">Подробнее о Генных ключах <span aria-hidden="true">↗</span></a></div>
+  </details>
+  <details id="method-dreams" class="method-detail">
+    <summary><span class="method-detail-kicker">03 / Язык бессознательного</span><span class="method-detail-heading">Сновидения и символы</span><span class="method-detail-hint">Свернуть <span aria-hidden="true">−</span></span></summary>
+    <div class="method-detail-body"><p>Сновидения можно исследовать как личные истории, в которых значимы образы, чувства, ассоциации и обстоятельства жизни. Вместо универсального сонника мы обращаем внимание на то, что конкретный символ означает именно для вас.</p><div class="method-detail-tags"><span>Образы сна</span><span>Личные ассоциации</span><span>Повторяющиеся мотивы</span></div></div>
+  </details>
+  <details id="method-myth" class="method-detail">
+    <summary><span class="method-detail-kicker">04 / Метафорический метод</span><span class="method-detail-heading">Мифологические образы и карты</span><span class="method-detail-hint">Свернуть <span aria-hidden="true">−</span></span></summary>
+    <div class="method-detail-body"><p>Мифы и метафорические карты позволяют посмотреть на ситуацию через образ. Мы исследуем ваши реакции и собственные ассоциации, а не ищем «единственно правильное» толкование картинки.</p><div class="method-detail-tags"><span>Мифологические сюжеты</span><span>Метафорические карты</span><span>Ассоциации</span></div><a class="method-inline-link" href="#deck">Об авторской колоде <span aria-hidden="true">↗</span></a></div>
+  </details>
+</div>
+</section>
+<section class="requests section" id="requests"><div class="wrap"><div class="centerhead"><div class="eyebrow">03 / Запросы</div><h2>Что можно исследовать</h2><p>Необязательно заранее выбирать метод. Достаточно вопроса или темы, которая сейчас требует внимания.</p></div><div class="request-grid">
+<div class="request request-illustrated"><div aria-hidden="true" class="request-art"><span class="request-ring"></span><span class="request-symbol">✧</span></div><span class="request-index">01</span><strong>Поиск себя и собственного пути</strong><p>Ориентиры, ценности, выбор и ощущение своего пути.</p></div>
+<div class="request request-illustrated"><div aria-hidden="true" class="request-art"><span class="request-ring"></span><span class="request-symbol">✺</span></div><span class="request-index">02</span><strong>Самореализация и потенциал</strong><p>Таланты, творческое выражение и личный потенциал.</p></div>
+<div class="request request-illustrated"><div aria-hidden="true" class="request-art"><span class="request-ring"></span><span class="request-symbol">↝</span></div><span class="request-index">03</span><strong>Повторяющиеся сценарии</strong><p>Привычные роли и реакции, которые возвращаются.</p></div>
+<div class="request request-illustrated"><div aria-hidden="true" class="request-art"><span class="request-ring"></span><span class="request-symbol">◐</span></div><span class="request-index">04</span><strong>Теневые аспекты личности</strong><p>Непринятые качества, чувства и желания.</p></div>
+<div class="request request-illustrated"><div aria-hidden="true" class="request-art"><span class="request-ring"></span><span class="request-symbol">◇</span></div><span class="request-index">05</span><strong>Внутренние противоречия</strong><p>Разные стремления и потребности внутри нас.</p></div>
+<div class="request request-illustrated"><div aria-hidden="true" class="request-art"><span class="request-ring"></span><span class="request-symbol">✳</span></div><span class="request-index">06</span><strong>Периоды перемен</strong><p>Поиск смысла и внутренних опор в период изменений.</p></div>
+</div></div></section>
+<section class="section wrap" id="genekeys"><div class="keys"><div><div class="eyebrow">04 / Генные ключи</div><h2>От Тени<br/>к Дару</h2><p>Генные ключи Ричарда Радда — символическая система самопознания, в которой каждый из 64 ключей рассматривается через три уровня созерцания.</p><p>Для меня важен не только текст описания ключа, а то, как символическая тема проявляется в конкретной жизни: переживаниях, решениях, отношениях с собой и выборе.</p><div class="buttons"><a class="btn" href="#offers">Выбрать формат исследования</a></div></div><div class="keys-graphic keys-artful"><div class="frequency-story"><div class="frequency frequency-art frequency-shadow"><div class="frequency-emblem"><span>◑</span></div><div class="frequency-word"><span>Тень</span><em>Что становится видимым</em></div><span class="frequency-dot">✦</span></div><div class="frequency frequency-art frequency-gift"><div class="frequency-emblem"><span>❧</span></div><div class="frequency-word"><span>Дар</span><em>Как рождается новая возможность</em></div><span class="frequency-dot">✦</span></div><div class="frequency frequency-art frequency-siddhi"><div class="frequency-emblem"><span>✺</span></div><div class="frequency-word"><span>Сиддхи</span><em>Пространство созерцания</em></div><span class="frequency-dot">✦</span></div></div><div class="freq-caption">Три уровня созерцания одного символа</div></div></div></section>
+<section class="at3" id="atlas">
+<div class="wrap at3-wrap">
+<div class="at3-heading">
+<div class="eyebrow">05 / АВТОРСКИЕ ИНТЕРАКТИВНЫЕ ПРАКТИКИ</div>
+<h2>Атлас <span class="at3-title-accent">внутреннего мира</span></h2>
+<p>Два способа познакомиться с собой через язык символов. Выберите один — и начните исследование прямо здесь.</p>
+<div class="at3-signature">АВТОРСКОЕ ПРОСТРАНСТВО ОЛЕСИ ПАВЛЮКОВОЙ</div>
+</div>
+<div aria-label="Выбор практики" class="at3-choices" role="group">
+<button aria-controls="atlas-profile" aria-expanded="false" class="at3-choice at3-choice-profile" id="choose-profile" type="button">
+<img alt="Художественные стеклянные сферы с природными образами, соединённые золотыми линиями" loading="lazy" src="assets/gene-keys-profile-art.jpg"/>
+<span class="at3-choice-body"><span class="at3-choice-n">01 / КАРТА ЛИЧНЫХ ТЕМ</span><span class="at3-choice-title">Хологенетический<br/>профиль</span><span class="at3-choice-desc">Узнать свой профиль по данным рождения и исследовать символические темы</span><span class="at3-choice-cta">Рассчитать профиль <span aria-hidden="true">↗</span></span></span>
+</button>
+<button aria-controls="atlas-oracle" aria-expanded="false" class="at3-choice at3-choice-oracle" id="choose-oracle" type="button">
+<img alt="Три старинные бронзовые монеты на оливковом бархате рядом с художественными картами" loading="lazy" src="assets/oracle-coins-art.jpg"/>
+<span class="at3-choice-body"><span class="at3-choice-n">02 / КЛЮЧ МОМЕНТА</span><span class="at3-choice-title">Авторский оракул<br/>64 ключей</span><span class="at3-choice-desc">Шесть бросков монет — одна гексаграмма и одна карта для размышления</span><span class="at3-choice-cta">Обратиться к оракулу <span aria-hidden="true">↗</span></span></span>
+</button>
+</div>
+<p class="at3-choice-hint" id="atlas-choose-hint">Нажмите на изображение профиля или оракула: выбранная практика откроется ниже.</p>
+<div class="at3-workspace" hidden="" id="atlas-profile">
+<div class="at3-workspace-top"><span class="eyebrow">ПРАКТИКА 01 · ХОЛОГЕНЕТИЧЕСКИЙ ПРОФИЛЬ</span><button aria-label="Закрыть выбранную практику" class="at3-close" type="button">✕</button></div>
+<div class="at3-profilegrid">
+<div class="at3-profileleft">
+<h3>Карта ваших <em>символических тем</em></h3>
+<p>Для расчёта понадобятся дата, время и место рождения. Сам калькулятор уже готов — здесь показано, как он будет оформлен в авторском пространстве.</p>
+<div class="at3-profile-details"><span>Дата рождения</span><span>Время рождения</span><span>Город рождения</span></div>
+<a class="btn primary at3-real-link" href="https://human-design-server-production.up.railway.app/keys" rel="noopener noreferrer" target="_blank">Открыть готовый калькулятор ↗</a>
+<p class="at3-explainer">Реальный расчёт сейчас открывается на сервере разработчика. После интеграции его можно будет выполнять в оформлении этого раздела.</p>
+</div>
+<div class="at3-chartarea">
+<div class="at3-chart-label">ПРИМЕР ВИЗУАЛИЗАЦИИ · ДАННЫЕ УСЛОВНЫЕ</div>
+<svg aria-label="Схематичная демонстрация взаимосвязанных сфер профиля" class="at3-sphere-svg" role="img" viewbox="0 0 540 545">
+<defs><lineargradient id="at3-line" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#c6a47a"></stop><stop offset="1" stop-color="#77846f"></stop></lineargradient></defs>
+<g fill="none" opacity=".7" stroke="url(#at3-line)" stroke-width="1.6">
+<path d="M270 47L270 132L171 225L270 322L369 225L270 47M270 132L369 225M171 225L78 322L176 402L270 509M369 225L462 322L365 402L270 509M78 322H462M171 225L270 322L369 225M176 402L270 322L365 402M176 402L270 437L365 402M270 322L270 437L270 509M171 225L176 402M369 225L365 402"></path>
+</g>
+<g class="at3-sphere" data-sphere="life" role="button" tabindex="0" transform="translate(270 47)"><circle fill="#f8f1e5" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">Дело жизни</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g><g class="at3-sphere" data-sphere="pearl" role="button" tabindex="0" transform="translate(270 132)"><circle fill="#e6eee9" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">Жемчужина</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g><g class="at3-sphere" data-sphere="vocation" role="button" tabindex="0" transform="translate(171 225)"><circle fill="#f7eee4" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">Призвание</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g><g class="at3-sphere" data-sphere="culture" role="button" tabindex="0" transform="translate(369 225)"><circle fill="#e6eee9" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">Культура</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g><g class="at3-sphere" data-sphere="radiance" role="button" tabindex="0" transform="translate(78 322)"><circle fill="#f8f0dc" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">Сияние</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g><g class="at3-sphere" data-sphere="evolution" role="button" tabindex="0" transform="translate(462 322)"><circle fill="#f8f0dc" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">Эволюция</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g><g class="at3-sphere" data-sphere="iq" role="button" tabindex="0" transform="translate(270 437)"><circle fill="#f6e6dc" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">IQ</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g><g class="at3-sphere" data-sphere="sq" role="button" tabindex="0" transform="translate(270 322)"><circle fill="#f7e6dc" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">SQ</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g><g class="at3-sphere" data-sphere="attraction" role="button" tabindex="0" transform="translate(176 402)"><circle fill="#f6e6dc" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">Притяжение</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g><g class="at3-sphere" data-sphere="eq" role="button" tabindex="0" transform="translate(365 402)"><circle fill="#f6e6dc" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">EQ</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g><g class="at3-sphere" data-sphere="purpose" role="button" tabindex="0" transform="translate(270 509)"><circle fill="#f8f0dc" r="32" stroke="#b69a76" stroke-width="1.6"></circle><circle fill="none" opacity=".36" r="26" stroke="#c6aa8b"></circle><text fill="#4c4339" font-size="10.4" font-weight="600" text-anchor="middle" x="0" y="-5">Цель</text><text fill="#907659" font-size="10.5" text-anchor="middle" x="0" y="13">•</text></g></svg>
+</div>
+</div>
+<div class="at3-personal-result">
+<div class="at3-personal-photo"><img alt="Олеся Павлюкова — портрет в оливковом топе среди зелени" loading="lazy" src="assets/olesya-oracle-olive.jpg"/></div>
+<div class="at3-personal-text"><span class="eyebrow">ВОПРОС ОТ ОЛЕСИ ПАВЛЮКОВОЙ</span><h3 id="at3-sphere-name">Выберите сферу на схеме</h3><p id="at3-sphere-question">Нажмите на любую сферу, чтобы увидеть пример вопроса, который поможет перейти от символа к личному опыту.</p><span class="at3-name">От расчёта — к осознанному исследованию</span></div>
+</div>
+</div>
+<div class="at3-workspace" hidden="" id="atlas-oracle">
+<div class="at3-workspace-top"><span class="eyebrow">ПРАКТИКА 02 · АВТОРСКИЙ ОРАКУЛ</span><button aria-label="Закрыть выбранную практику" class="at3-close" type="button">✕</button></div>
+<div class="at3-oracle-intro">
+<div><h3>Вопрос, три монеты,<br/><em>один ключ</em></h3><p>Сосредоточьтесь на вопросе. После шести бросков проявится гексаграмма. В готовой версии откроется одна карта из авторской колоды.</p></div>
+<div class="at3-oracle-portrait"><img alt="Олеся Павлюкова в фисташковом костюме" loading="lazy" src="assets/olesya-pistachio-suit.jpg"/><p>«Мне важно, чтобы символ не давал готовый ответ, а помогал увидеть собственный вопрос по-новому».</p><span>ОЛЕСЯ ПАВЛЮКОВА</span></div>
+</div>
+<div class="at3-oracle-play">
+<div class="at3-coinpanel">
+<span class="at3-small-label">ВАШ РИТУАЛ</span><h3>Бросьте три монеты</h3><p>Каждый бросок формирует одну линию снизу вверх.</p>
+<div class="at3-coins">
+<div aria-label="Бронзовая монета" class="at3-coin" role="img"><img alt="Монета с солнечным рельефом" data-a="assets/coin-sun.jpg" data-b="assets/coin-moon.jpg" src="assets/coin-sun.jpg"/></div>
+<div aria-label="Бронзовая монета" class="at3-coin" role="img"><img alt="Монета с лунным рельефом" data-a="assets/coin-sun.jpg" data-b="assets/coin-moon.jpg" src="assets/coin-moon.jpg"/></div>
+<div aria-label="Бронзовая монета" class="at3-coin" role="img"><img alt="Монета с гравировкой" data-a="assets/coin-sun.jpg" data-b="assets/coin-moon.jpg" src="assets/coin-engraved.jpg"/></div>
+</div>
+<div class="at3-oracle-buttons"><button class="btn at3-toss" id="at3-toss" type="button">Бросить монеты ↗</button><button class="at3-reset" id="at3-reset" type="button">Начать заново</button></div>
+<p class="at3-demo-notice">Демонстрация оформления · окончательный результат выдаёт готовая программа разработчика.</p>
+</div>
+<div class="at3-hexpanel">
+<div class="at3-hexhead"><span class="at3-small-label">ВАША ГЕКСАГРАММА</span><span id="at3-count">0 / 6</span></div>
+<div class="at3-hexlines" id="at3-lines"><span class="at3-empty">Шесть линий появятся здесь,<br/>снизу вверх</span></div>
+<div class="at3-progress"><span id="at3-progress"></span></div>
+<p aria-live="polite" id="at3-status">Нажмите «Бросить монеты», чтобы начать.</p>
+<div class="at3-finish" hidden="" id="at3-finish"><strong>Гексаграмма сформирована</strong><p>В рабочем оракуле здесь появится одна соответствующая карта с индивидуальным текстом и вопросами для созерцания.</p></div>
+</div>
+</div>
+</div>
+<div class="at3-bottom-sign">Один символ не определяет человека. Он может стать началом интересного разговора с собой.</div>
+</div>
+</section><section class="offers-section section" id="offers"><div class="wrap"><div class="centerhead"><div class="eyebrow">06 / Форматы работы</div><h2>От знакомства — к глубокой работе</h2><p>Первый разбор помогает познакомиться с системой. Более глубокая программа предполагает последовательную психологическую работу с темами каждого ключа.</p></div><div class="offer-grid">
+<article class="offer"><div class="offer-n">01 / Индивидуальный разбор</div><h3>Разбор по Генным ключам</h3><p>Первое знакомство с вашим индивидуальным профилем через четыре ключа Активационной последовательности.</p><div class="what">Что входит</div><ul class="details"><li>Предварительное изучение индивидуального профиля.</li><li>Разбор четырёх Генных ключей и их символических тем.</li><li>Исследование Тени, Дара и Сиддхи каждого ключа.</li><li>Обсуждение внутренних ограничений, личных ресурсов и направлений самостоятельного исследования.</li></ul><div class="offer-footer"><div class="price">20 000 ₽<span class="price-note">Ориентировочно 2 часа · без отдельной психологической проработки каждого ключа</span></div><button class="btn primary book" data-service="Разбор по Генным ключам — 20 000 ₽" type="button">Записаться на разбор</button></div></article>
+<article class="offer expanded"><div class="offer-n">02 / Последовательная глубокая работа</div><h3>Глубокая работа по Активационной последовательности</h3><p>Не только разбор Генных ключей, но и последовательное исследование и психологическая проработка тем каждого из четырёх ключей.</p><div class="what">Что входит</div><ul class="details"><li>Подробный разбор индивидуальной Активационной последовательности.</li><li>Отдельная глубокая работа с темами каждого ключа.</li><li>Исследование эмоциональных реакций, убеждений, внутренних конфликтов и повторяющихся сценариев.</li><li>Практики осознавания и интеграция личных открытий в повседневную жизнь.</li></ul><div class="offer-footer"><div class="price">60 000 ₽<span class="price-note">Последовательные встречи · структура и темп согласовываются индивидуально</span></div><button class="btn primary book" data-service="Глубокая работа по Активационной последовательности — 60 000 ₽" type="button">Узнать о программе</button></div></article>
+</div><p class="offer-note">Каждый формат предполагает индивидуальное исследование. Условия, объём встреч и границы сопровождения согласовываются до начала работы.</p></div></section>
+<section class="mentor section" id="mentoring"><div class="wrap mentor-grid"><div class="mentor-pic"><img alt="Олеся Павлюкова в чёрном жакете — индивидуальное наставничество" decoding="sync" loading="eager" src="assets/olesya-black-jacket.jpg"/></div><div class="mentor-copy"><div class="eyebrow">07 / Персональное сопровождение</div><h2>Индивидуальное наставничество</h2><p class="big">Глубинное исследование личности. Ваш индивидуальный путь.</p><p>Здесь нет единого заранее заданного маршрута. Я выстраиваю программу вокруг вашей личности, жизненного опыта, внутренних противоречий и запроса, сочетая психологическую работу, коучинг, архетипы, Генные ключи, сны и метафоры.</p><div class="what">Что входит в программу</div><ul class="details"><li>Первичная глубокая встреча и формирование индивидуального запроса.</li><li>Персональный маршрут исследования личности.</li><li>10 индивидуальных встреч.</li><li>Работа с убеждениями, внутренними конфликтами и жизненными сценариями.</li><li>Исследование архетипов, символов и Генных ключей по запросу.</li><li>Индивидуальные практики и сопровождение между встречами в согласованном формате.</li></ul><div class="mentor-price">150 000 ₽</div><div class="mentor-small">Ориентировочно 2–3 месяца · индивидуальный темп</div><button class="btn primary book" data-service="Индивидуальное наставничество — 150 000 ₽" type="button">Обсудить наставничество</button></div></div></section>
+<section class="section wrap" id="deck"><div class="deck-grid"><div class="deck-copy"><div class="eyebrow">08 / Авторский проект</div><h2>Когда символ становится образом</h2><p>Я создаю авторскую колоду из 64 метафорических карт, соединяющую философию Генных ключей Ричарда Радда и символику 64 гексаграмм И Цзин.</p><p>Каждая карта — самостоятельная художественная история. Сюрреалистические образы становятся приглашением к созерцанию, поиску личных ассоциаций и осмыслению своего опыта.</p><p><strong>Колода находится в разработке.</strong> После завершения проекта здесь появятся её настоящие изображения и возможность познакомиться с каждой картой.</p><div class="buttons"></div></div><div aria-label="Визуальный анонс авторской колоды: несколько художественных карт и центральная карточка с надписью колода в разработке" class="deck-visual" role="img"><div class="deck-stage"><div class="deck-card deck-card-left"><div class="deck-card-art"><span class="deck-portal"></span></div><div class="deck-card-note">Символ · образ</div></div><div class="deck-card deck-card-center"><div class="deck-card-art"><div class="deck-lines"><span></span><span class="break"></span><span></span><span class="break"></span><span></span><span class="break"></span></div></div><div class="deck-card-note">64 карты</div></div><div class="deck-poster"><div class="deck-poster-inner"><div><div class="deck-overline">Авторская художественная колода</div><div class="deck-title">64 карты</div><div class="deck-subtitle">Архетипы · символы · Генные ключи · сюрреалистические метафоры</div></div><div class="deck-badge">Колода в разработке</div></div></div><div class="deck-card deck-card-right"><div class="deck-card-art"><div class="deck-art-word">Коллекция</div><div class="deck-art-big">∞</div><div class="deck-art-small">Образы, которые помогают увидеть внутренние процессы через символический язык.</div><div class="deck-inwork">Скоро на сайте</div></div></div><div class="art-caption">Фрагмент будущего визуального языка колоды</div></div></div></div></section>
+<section class="section wrap" id="faq"><div class="centerhead"><div class="eyebrow">09 / Частые вопросы</div><h2>Перед первой встречей</h2></div><div class="faqs"><details><summary>Нужно ли заранее знать, какой метод мне подходит?</summary><p>Нет. Вы можете прийти с запросом или жизненной темой. Мы обсудим, какие инструменты могут быть полезны именно в вашем исследовании.</p></details><details><summary>В чём разница между разбором за 20 000 ₽ и программой за 60 000 ₽?</summary><p>Разбор — это знакомство с четырьмя Генными ключами Активационной последовательности, их смыслами и темами. Глубокая программа включает сам разбор и отдельную последовательную психологическую работу с темами каждого ключа, с вниманием к личным реакциям и интеграции.</p></details><details><summary>Чем отличается наставничество?</summary><p>Наставничество строится не вокруг фиксированной Активационной последовательности, а индивидуально вокруг вашей личности и запроса. Включает 10 встреч и согласованный формат сопровождения между ними.</p></details></div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="eyebrow">Начать исследование</div><h2>У каждого пути<br/>свой первый вопрос</h2><p>Можно начать с разбора Генных ключей, выбрать углублённую работу или обсудить индивидуальное наставничество.</p><div class="contact-socials" aria-label="Социальные сети"><a href="https://www.instagram.com/pavlyukova_olesya/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Олеси Павлюковой"><span class="social-mark" aria-hidden="true">◎</span> Instagram ↗</a><a href="https://t.me/pavlyukova_olesya" target="_blank" rel="noopener noreferrer" aria-label="Telegram Олеси Павлюковой"><span class="social-mark" aria-hidden="true">✈</span> Telegram ↗</a></div></div><div class="buttons"><button class="btn primary book" data-service="Обсудить формат работы по архетипам и символам" type="button">Обсудить свой запрос</button></div></div></section>
+</main>
+<footer class="foot"><div class="wrap"><div class="footer"><div><div class="eyebrow" style="color:#c7ad87">Олеся Павлюкова</div><h2>До встречи</h2></div><div class="footer-links"><a href="#start">Наверх ↑</a><a href="https://www.instagram.com/pavlyukova_olesya/" rel="noopener noreferrer" target="_blank">Instagram ↗</a><a href="https://t.me/pavlyukova_olesya" rel="noopener noreferrer" target="_blank">Telegram ↗</a></div></div><div class="bottom">© Олеся Павлюкова · Визуальный макет раздела «Архетипы и символы»<br/>Архетипические, метафорические и символические инструменты предназначены для самопознания и не заменяют клиническую диагностику.</div></div></footer>
+<dialog aria-labelledby="book-title" id="booking-dialog"><button aria-label="Закрыть" class="dialog-close" id="book-close" type="button">×</button><div class="eyebrow">Связаться со мной</div><h2 id="book-title">Обсудим ваш запрос</h2><p>Подготовила текст обращения. Его можно скопировать или написать мне в Instagram или Telegram.</p><div class="message" id="booking-message"></div><div class="dialog-actions"><a class="btn primary" href="https://www.instagram.com/pavlyukova_olesya/" rel="noopener noreferrer" target="_blank">Instagram ↗</a><a class="btn at3-telegram-btn" href="https://t.me/pavlyukova_olesya" rel="noopener noreferrer" target="_blank">Telegram ↗</a><button class="btn" id="copy-message" type="button">Скопировать сообщение</button></div><div class="dialog-status" id="dialog-status" role="status"></div></dialog>
+<script src="js/archetypes-nav.js"></script>
+<script src="js/archetypes-atlas.js"></script>
+<script src="js/archetypes-tools.js"></script>
+</body></html>

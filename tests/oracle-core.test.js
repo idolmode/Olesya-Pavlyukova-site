@@ -1,6 +1,6 @@
 // Тесты логики оракула: node tests/oracle-core.test.js
 const assert = require("assert");
-const O = require("../public/js/oracle-core.js");
+const O = require("../oracle-integration/js/oracle-core.js");
 
 // 1) все 64 сочетания дают 64 разных номера 1..64
 const seen = new Map();
